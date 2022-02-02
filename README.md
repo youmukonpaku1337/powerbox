@@ -6,8 +6,9 @@ Because we can. Seriously, the base android system is so fucking bloated, so let
 
 # how to use?
 This script sets up a chroot and installs alpishell, a very nice utility.
-to run it, just do:
+to run it, just enter the android root shell and run:
 ```
+curl https://raw.githubusercontent.com/egor4ka/powerbox/main/powerbox.sh | sh
 ``` 
 and you should be done!
 
