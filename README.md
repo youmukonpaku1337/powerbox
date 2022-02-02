@@ -20,3 +20,9 @@ yep, it's set up for that so you don't have to worry about stuff
 
 # (any other question here)
 the alpine wiki should have all you need
+
+# where can i get the chroot tarball only, instead of a script?
+at https://duckykutya.cf/kat/powerbox/powerbox.tar.gz
+
+# can i run this on my PC?
+Not yet: the chroot (and the alpishell that the shell downloads) is only for x86-64 currently, so maybe on a Pi, but not yet on a pc unless you're gonna emulate.
