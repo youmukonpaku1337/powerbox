@@ -19,3 +19,4 @@ echo 'source /home/powerbox/git/powerlevel10k/powerlevel10k.zsh-theme' >>/home/p
 wget https://raw.githubusercontent.com/egor4ka/powerbox/main/profile
 mv ./profile /etc/profile
 EOT
+tar -zcvf powerbox.tar.gz ./alpine
