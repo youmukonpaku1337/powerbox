@@ -5,4 +5,5 @@ jobs:
   linux:
     name: Linux build on node ${{ matrix.node_version }}
     runs-on: ubuntu-latest
+  - name: build
   run: sh "${GITHUB_WORKSPACE}/build-powerbox.sh"
