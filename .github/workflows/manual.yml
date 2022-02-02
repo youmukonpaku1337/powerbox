@@ -13,7 +13,7 @@ jobs:
         ./powerbox-build.sh
       shell: bash
     - name: 'Upload Artifact'
-    uses: actions/upload-artifact@v2
-    with:
-      name: powerbox-build
-      path: powerbox.tar.gz
+      uses: actions/upload-artifact@v2
+      with:
+        name: powerbox-build
+        path: powerbox.tar.gz
