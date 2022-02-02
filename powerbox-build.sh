@@ -1,6 +1,6 @@
-wget https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-minirootfs-3.15.0-aarch64.tar.gz
+curl -LO alpine.tar.gz https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-minirootfs-3.15.0-aarch64.tar.gz
 mkdir ./alpine
-tar -xvf alpine-minirootfs-3.15.0-aarch64.tar.gz -C ./alpine/
+tar -xvf alpine.tar.gz -C ./alpine/
 chroot ./alpine /bin/sh<<"EOT"
 apk add bat curl wget github-cli git alpine-base doas zsh shadow bash openssh gcc alpine-sdk
 source /etc/profile
@@ -19,4 +19,4 @@ echo 'source /home/powerbox/git/powerlevel10k/powerlevel10k.zsh-theme' >>/home/p
 wget https://raw.githubusercontent.com/egor4ka/powerbox/main/profile
 mv ./profile /etc/profile
 EOT
-tar -zcvf powerbox.tar.gz ./alpine
+tar -zcvf ./powerbox.tar.gz ./alpine
