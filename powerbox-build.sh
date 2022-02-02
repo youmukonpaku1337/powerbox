@@ -1,15 +1,9 @@
- hostarch = $(uname -m)
+hostarch = $(uname -m)
 rm ./powerbox-$hostarch.tar.gz
 mkdir ./alpine
 
-if [ $hostarch == "aarch64" ]
-then
-  curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-minirootfs-3.15.0-aarch64.tar.gz
-  tar -xvf alpine-minirootfs-3.15.0-aarch64.tar.gz -C ./alpine/
-else
-  curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-minirootfs-3.15.0-x86_64.tar.gz
-  tar -xvf alpine-minirootfs-3.15.0-x86_64.tar.gz -C ./alpine
-fi
+curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/$hostarch/alpine-minirootfs-3.15.0-$hostarch.tar.gz
+tar -xvf alpine-minirootfs-3.15.0-$hostarch.tar.gz -C ./alpine/
 
 doas chroot ./alpine /bin/sh<<"EOT"
 source /etc/profile
