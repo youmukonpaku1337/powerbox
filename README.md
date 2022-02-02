@@ -13,16 +13,19 @@ curl https://raw.githubusercontent.com/egor4ka/powerbox/main/powerbox.sh | sh
 and you should be done!
 
 # How the fuck is the archive only 60mb?
-because the alpine rootfs is small: only 3mb and the rest is just packages, plus the archive is compressed with gzip
+Because the alpine rootfs is small: only 3mb and the rest is just packages, plus the archive is compressed with gzip
 
 # Can I run services in it?
-yep, it's set up for that so you don't have to worry about stuff
+Yep, it's set up for that so you don't have to worry about stuff
 
 # (any other question here)
-the alpine wiki should have all you need
+The alpine wiki should have all you need
 
-# where can i get the chroot tarball only, instead of a script?
+# Where can I get the chroot tarball only, instead of a script?
 at https://duckykutya.cf/kat/powerbox/powerbox.tar.gz
 
-# can i run this on my PC?
+# Can I run this on my PC?
 Not yet: the chroot (and the alpishell that the shell downloads) is only for arm64 currently, so maybe on a Pi, but not yet on a pc unless you're gonna emulate.
+
+# What's the password?
+The default passwords are powerbox for root and powerbox for the powerbox user.
