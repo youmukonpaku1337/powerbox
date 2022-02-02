@@ -16,4 +16,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: powerbox-build
-        path: powerbox.tar.gz
+        path: ./powerbox.tar.gz
