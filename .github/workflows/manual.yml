@@ -3,10 +3,10 @@ on: push
 
 jobs:
   linux:
-    name: Linux build on node ${{ matrix.node_version }}
+    name: build powerbox
     runs-on: ubuntu-latest
     steps:
     - name: build
       run: 
-      ./powerbox-build.sh"
+      ./powerbox-build.sh
       shell: bash
