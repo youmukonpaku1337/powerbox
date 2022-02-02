@@ -6,6 +6,7 @@ jobs:
     name: Linux build on node ${{ matrix.node_version }}
     runs-on: ubuntu-latest
     steps:
-    - name: build
+    - name: chmod
       run: chmod +x ./build-powerbox.sh
+    - name: build
       run: ./build-powerbox.sh"
