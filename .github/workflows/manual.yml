@@ -1,0 +1,12 @@
+name: CI
+on: push
+
+jobs:
+  linux:
+    name: Linux build on node ${{ matrix.node_version }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: chmod
+      run: chmod +x ./powerbox-build.sh
+    - name: build
+      run: ./powerbox-build.sh"
