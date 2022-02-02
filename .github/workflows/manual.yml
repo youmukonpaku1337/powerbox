@@ -7,6 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build
-      run: 
-      ./powerbox-build.sh
+      run: ./powerbox-build.sh
       shell: bash
