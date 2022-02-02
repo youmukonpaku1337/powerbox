@@ -25,4 +25,4 @@ the alpine wiki should have all you need
 at https://duckykutya.cf/kat/powerbox/powerbox.tar.gz
 
 # can i run this on my PC?
-Not yet: the chroot (and the alpishell that the shell downloads) is only for x86-64 currently, so maybe on a Pi, but not yet on a pc unless you're gonna emulate.
+Not yet: the chroot (and the alpishell that the shell downloads) is only for arm64 currently, so maybe on a Pi, but not yet on a pc unless you're gonna emulate.
