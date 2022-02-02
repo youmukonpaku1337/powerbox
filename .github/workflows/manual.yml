@@ -8,5 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-      run: ./powerbox-build.sh
+      run: 
+        chmod +x ./powerbox-build.sh
+        ./powerbox-build.sh
       shell: bash
