@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build
-      chmod +x ./build-powerbox.sh
+      run: chmod +x ./build-powerbox.sh
       run: ./build-powerbox.sh"
