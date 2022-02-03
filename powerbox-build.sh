@@ -1,4 +1,4 @@
-HOSTARCH=$(uname -m)
+ HOSTARCH=$(uname -m)
 echo $HOSTARCH
 rm powerbox-$HOSTARCH.tar.gz
 mkdir alpine
@@ -14,6 +14,8 @@ adduser -s /bin/zsh -g inet powerbox
 rm /etc/resolv.conf
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 apk add bat curl wget nim github-cli git alpine-base doas zsh shadow bash openssh gcc alpine-sdk
+echo "permit powerbox">/etc/doas.d/doas.conf
+echo "permit nopass root">/etc/doas.d/doas.conf
 mkdir -p /home/powerbox/git
 mkdir /home/powerbox/downloads
 mkdir -p /run/openrc/
