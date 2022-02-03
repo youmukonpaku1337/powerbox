@@ -1,6 +1,7 @@
 HOSTARCH=$(uname -m)
-rm ./powerbox-$HOSTARCH.tar.gz
-mkdir ./alpine
+echo $HOSTARCH
+rm powerbox-$HOSTARCH.tar.gz
+mkdir alpine
 
 curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/$HOSTARCH/alpine-minirootfs-3.15.0-$HOSTARCH.tar.gz
 tar -xvf alpine-minirootfs-3.15.0-$HOSTARCH.tar.gz -C ./alpine/
@@ -25,8 +26,9 @@ echo 'source /home/powerbox/git/powerlevel10k/powerlevel10k.zsh-theme' >>/home/p
 EOT
 
 doas /bin/sh<<"EOT"
+HOSTARCH=$(uname -m)
 cp ./profile ./alpine/etc/
-tar -zcvf ./powerbox-$HOSTARCH.tar.gz ./alpine
+tar -zcvf powerbox-$HOSTARCH.tar.gz ./alpine
 rm -rf ./alpine
 rm alpine-minirootfs-3.15.0-$HOSTARCH.tar.gz
 EOT
