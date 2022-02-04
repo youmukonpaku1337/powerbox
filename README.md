@@ -31,9 +31,10 @@ Not yet: the chroot (and the alpishell that the shell downloads) is only for arm
 The default passwords are powerbox for root and powerbox for the powerbox user.
 
 # What are the tweaks you made?
-installed zsh, doas, openssh i think
+installed zsh, doas, mpv, openssh, bat, nnn, bash, wget, curl, alpine-sdk, github-cli, git, alpine-base 
 
 added the inet group to get socket access to use internet
+
 added the powerbox and root user to inet group
 
 did some stuff to make openrc work (just symlinked some file to make it think that /run/openrc/softlevel exists)
