@@ -2,11 +2,11 @@
 An alpine chroot for android users (requires root and busybox)
 
 # Why?
-Because we can. Seriously, the base android system is so fucking bloated, so let's just create a chroot and forget about that shit. PowerBox is made specifically for android, because why not?
+Because we can. Seriously, the base android system is so fucking bloated, so let's just create a chroot and forget about that shit. PowerBox is made specifically for Android, because why not?
 
 # How to use?
 This script sets up the chroot at /linux, creates a 10gb image and adds a shell script to mount all the stuff at /sdcard/mountimg.sh
-to run it, just enter the android root shell and run:
+to run it, just enter the Android root shell and run:
 ```
 curl https://raw.githubusercontent.com/egor4ka/powerbox/main/powerbox.sh | sh
 ``` 
@@ -18,14 +18,14 @@ Because the alpine rootfs is small: only 3mb and the rest is just packages, plus
 # Can I run services in it?
 Yep, it's set up for that so you don't have to worry about stuff
 
-# (any other question here)
+# <any other question here>
 The alpine wiki should have all you need
 
 # Where can I get the chroot tarball only, instead of a script?
 at https://duckykutya.cf/kat/powerbox/powerbox.tar.gz
 
 # Can I run this on my PC?
-Yea!
+Yeah!
 
 # What's the password?
 The default passwords are powerbox for root and powerbox for the powerbox user.
