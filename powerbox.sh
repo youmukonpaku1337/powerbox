@@ -35,15 +35,7 @@ wget https://github.com/egor4ka/powerbox/releases/download/0.1/powerbox-$HOSTARC
 echo "Unpacking archive..."
 tar -xvf powerbox-$HOSTARCH.tar.gz -C $powerdir
 
-echo "Downloading alpishell..."
-wget https://github.com/egor4ka/alpishell/releases/download/0.1/alpishell
-
-echo "Installing alpishell..."
-mv alpishell /system/xbin/alpishell
-chmod +x /system/xbin/alpishell
-
 echo "Cleaning up..."
 rm powerbox-$HOSTARCH.tar.gz
-rm alpishell
 
-echo "Done! Now, just run alpishell and you should be fine, unless you used a different path/.img path, in which case run alpishell -h to get some help."
+echo "Done! Now, just mount the img and bind the dev and stuff and you should be fine, unless you used a different path/.img path, in which case run alpishell -h to get some help."
